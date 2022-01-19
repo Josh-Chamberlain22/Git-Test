@@ -26,7 +26,7 @@ namespace Test
                     counter++;
                 }
             }
-            Console.WriteLine("You guessed Correct");
+            Console.WriteLine("You guessed Correct!");
         }
     }
 }
