@@ -8,7 +8,11 @@ namespace Test
         {
             Console.WriteLine("I am thinking of a number between 0 and 100");
             Random rnd = new Random();
-            int value = rnd.Next(0, 100);
+            Console.WriteLine("Pick the lowest number in the range: ");
+            int lowerBound = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Pick the highest number in the range: ");
+            int upperBound = Convert.ToInt32(Console.ReadLine());
+            int value = rnd.Next(lowerBound, upperBound);
             Console.Write("Guess Number: ");
             int userValue = Convert.ToInt32(Console.ReadLine());
             int counter = 0;
